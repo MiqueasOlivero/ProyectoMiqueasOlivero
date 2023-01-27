@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Miqueas Olivero</title>
+</head>
+<body>
+    <!--Inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Miq. Olivero</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#curriculum" onclick="seleccionar(this)">CURRICULUM</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!--Icono del menú-->
+                    <div id="icono-nav">
+                        <i class="fa-solid fa-bars" onclick="responsiveMenu()"></i>
+                    </div> 
+                    
+                    <!--Iconos Redes-->
+                    <div class="redes">
+                        <a href="https://www.facebook.com/micky.olivero/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mickyolivero/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/MiqueasOlivero" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div> 
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Miqueas Olivero</span>, desarrollador Web Front End</h2>
+                <!--<p class="descripcion">Estudiante de la carrera de ingenieria en software y desarrollador Jr.</p>-->
+                <a href="#curriculum">Ir al Curriculum</a>
+            </div>
+        </div>
+    </section>
+    <!--Curriculum-->
+    <section id="curriculum">
+        <div class="contenedor-foto">
+            <img src="img/yo.jpg" alt="">
+        </div>
+        <div class="curriculum">
+            <p class="titulo-seccion">Curriculum</p>
+            <h2>Hola, soy <span>Miqueas Olivero</span></h2>
+            <h3>Desarrollador Web Front End</h3>
+            <p>Soy de Buenos Aires Argentina he desarrollado y colaborado en proyectos personales y grupales de diversas entidades con fines de adquirir experiencia como desarrollador de software.</p>
+            <p>Actualmente me encuentro finalizando mis estudios y lo que mas me gusta de la programación es brindar soluciones a problemas que se presentan, y brindar una gran variedad de ideas para obtener los mejores resultados.</p>
+            <a href="/cv.pdf" download>Descargar Cv</a>
+        </div>
+    </section>
+    <!--Habilidades-->
+   
+    <div class="contenedor-skills" id="skills">
+        <h3>MIS HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de datos</p>
+                <span class="porcentaje">65%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Photoshop</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+ <!--Contacto-->
+ <section id="contacto">
+        <h3 class="titulo-seccion">Contactame Ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+ </section>
+<!--Footer-->
+<footer>
+    <p>Todos los derechos reservados - 2023</p>
+    <p>Miqueasolivero@gmail.com</p>
+    <div class="redes">
+        <a href="https://www.facebook.com/micky.olivero/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/mickyolivero/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/MiqueasOlivero" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>  
